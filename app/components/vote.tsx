@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Emoji } from "./emoji";
 import { Result } from "./result";
-import {Button} from '@heroui/button'; 
 
 
 export function Vote() {
@@ -15,12 +14,12 @@ export function Vote() {
 
     return (
         <div>
-            <Button onPress={() => vote("🐆")} color="primary">
+            <button onClick={() => vote("🐆")} color="primary">
                 <Emoji>🐆</Emoji>
-            </Button>
-            <Button onPress={() => vote("🦕")} color="secondary">
+            </button>
+            <button onClick={() => vote("🦕")} color="secondary">
                 <Emoji>🦕</Emoji>
-            </Button>
+            </button>
             <Result result={result} />
         </div>
     );
