@@ -1,7 +1,7 @@
 
 export function Result(props: { result: string }) {
     return (
-        <div >
+        <div className="alert alert-primary" role="alert">
             You voted {props.result}
         </div>
     );
