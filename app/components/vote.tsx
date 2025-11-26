@@ -29,8 +29,13 @@ export function Vote() {
             {
                 result !== "" && 
                 (
-                    <div className="row mt-5">
-                        <Result result={result} />
+                    <div>
+                        <div className="row mt-5">
+                            <Result result={result} />
+                        </div>
+                        <div className="row">
+                            <button type="button" className="btn btn-secondary" onClick={() => setResult("")}>Clear</button>
+                        </div>
                     </div>
                 )
             }
