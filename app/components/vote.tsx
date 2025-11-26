@@ -26,9 +26,14 @@ export function Vote() {
                     </button>
                 </div>
             </div>
-            <div className="row mt-5">
-                <Result result={result} />
-            </div>
+            {
+                result !== "" && 
+                (
+                    <div className="row mt-5">
+                        <Result result={result} />
+                    </div>
+                )
+            }
         </div>
     );
 }
